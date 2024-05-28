@@ -1,6 +1,6 @@
 from django.urls import path
-from .migrations import views
-
+from .views import index,home
 urlpatterns = [
-    path("", views.index, name="index")
+    path("", index, name="index"),
+    path('home',home, name="home"),
 ]
